@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Design tokens. Tailwind v4 turns these into utilities: --color-lse gives
+   you bg-lse, text-lse, border-lse, and so on. Change the hex here and the
+   whole site follows. Keep it in step with PRIMARY_RED in prototype/main.py. */
+@theme {
+  --color-lse: #da291c;
+  --color-lse-dark: #c1241a;
+  --color-lse-tint: #da291c20;
+  --font-sans: "Roboto", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply font-sans text-[15px] text-neutral-900 antialiased;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Priya Sharma",
+    "year": "Year 3",
+    "department": "Finance",
+    "bio": "VP of LSE Finance Society - interned at Goldman Sachs and Citadel - happy to chat about IB/HF recruiting!",
+    "tags": "Finance;Career;Internships;Startups"
+  },
+  {
+    "name": "James Chen",
+    "year": "Year 2",
+    "department": "Economics",
+    "bio": "Second year BSc Econ - loves finding cheap eats around Holborn",
+    "tags": "Economics;Maths;Exam Prep;Food"
+  },
+  {
+    "name": "Angel Saraogi",
+    "year": "Final Year",
+    "department": "Maths Stats and Business",
+    "bio": "Co-founder of LSE Connect - happy to talk startups and stats",
+    "tags": "Startups;Maths;Career"
+  },
+  {
+    "name": "Jaiveer Singh Madan",
+    "year": "Final Year",
+    "department": "Economics",
+    "bio": "Co-founder of LSE Connect",
+    "tags": "Economics;Startups;Career"
+  }
+]
