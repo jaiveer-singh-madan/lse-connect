@@ -1,0 +1,30 @@
+# Netlify reads this file from the repo root. Nothing here needs changing to
+# get the site live — the API proxy at the bottom stays commented out until
+# you actually have a Python service running.
+
+[build]
+  base = "web"              # run the build inside web/
+  command = "npm run build"
+  publish = "dist"          # relative to base, so web/dist
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# --- Phase 2 only: uncomment once the Python API is deployed ---------------
+# Proxies https://your-site.netlify.app/api/* to the Python service, so the
+# browser only ever talks to your own domain and there's no CORS to configure.
+# Set VITE_API_URL=/api in Netlify's environment variables at the same time.
+# This block must stay ABOVE the SPA fallback below.
+#
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://YOUR-SERVICE.onrender.com/:splat"
+#   status = 200
+#   force = true
+
+# React Router needs every path to serve index.html, or /discover 404s on
+# refresh and on any link someone shares.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
